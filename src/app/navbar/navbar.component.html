@@ -1,10 +1,20 @@
-<div class="ui fixed inverted menu">
+<div class="ui huge fixed inverted menu">
   <div class="ui container">
     <a [routerLink]="['/']" class="header item">
       <i class="users icon"></i>
       <!--<img class="logo" src="">-->
       SATS </a>
-    <a class="item right" [routerLink]="['/about']" [routerLinkActive]="['router-link-active']"
-       [routerLinkActiveOptions]="{exact:true}">About</a>
+    <div class="right menu">
+      <a class="item" [routerLink]="['/getting-started']" [routerLinkActive]="['router-link-active']"
+         [routerLinkActiveOptions]="{exact:true}">Getting started</a>
+      <a class="item" [routerLink]="['/usage']" [routerLinkActive]="['router-link-active']"
+         [routerLinkActiveOptions]="{exact:true}">Usage</a>
+      <a class="item" [routerLink]="['/about']" [routerLinkActive]="['router-link-active']"
+         [routerLinkActiveOptions]="{exact:true}">About</a>
+      <a class="item" href="https://github.com/" target="_blank">
+        <i class="github icon"></i>
+        Github
+      </a>
+    </div>
   </div>
 </div>

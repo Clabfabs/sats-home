@@ -1,0 +1,19 @@
+<div class="ui hidden divider"></div>
+<div class="ui container">
+  <h2 class="ui dividing header">Usage</h2>
+  <div class="ui pointing compact menu">
+    <a class="item" [ngClass]="{active: selection == 0}" (click)="select(0)">
+      SATS Core
+    </a>
+    <a class="item" [ngClass]="{active: selection == 1}" (click)="select(1)">
+      SATS CLI
+    </a>
+    <a class="item" [ngClass]="{active: selection == 2}" (click)="select(2)">
+      SATS Web
+    </a>
+  </div>
+  <app-sats-core-usage *ngIf="selection == 0"></app-sats-core-usage>
+  <app-sats-cli-usage *ngIf="selection == 1"></app-sats-cli-usage>
+  <app-sats-web-usage *ngIf="selection == 2"></app-sats-web-usage>
+
+</div>
