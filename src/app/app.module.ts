@@ -16,12 +16,13 @@ import {SatsWebGettingStartedComponent} from "./getting-started/sats-web/sats-we
 import {SatsCoreUsageComponent} from "./usage/sats-core/sats-core.component";
 import {SatsCliUsageComponent} from "./usage/sats-cli/sats-cli.component";
 import {SatsWebUsageComponent} from "./usage/sats-web/sats-web.component";
+import {SatsWebComponent} from './sats-web/sats-web.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'getting-started', component: GettingStartedComponent},
-  {path: 'usage', component: UsageComponent}
+  {path: 'sats-web', component: SatsWebComponent}
 ];
 
 @NgModule({
@@ -37,7 +38,8 @@ const appRoutes: Routes = [
     SatsWebGettingStartedComponent,
     SatsCoreUsageComponent,
     SatsCliUsageComponent,
-    SatsWebUsageComponent
+    SatsWebUsageComponent,
+    SatsWebComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
