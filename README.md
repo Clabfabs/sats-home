@@ -14,9 +14,9 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Easiest way is to use angular-cli-ghpages: `npm i -g angular-cli-ghpages`
 
-Run `ng build --prod --base-href "https://spectrumauctions.github.io/sats-home/"` to build the project.
+Run `ng build --prod --base-href "https://spectrumauctions.github.io/"` to build the project.
 
-Publish with `ngh`.
+Publish with `ngh --repo=https://spectrumauctions.github.io/ --branch="master"`.
 
 
 ## Running unit tests
