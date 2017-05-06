@@ -1,16 +1,7 @@
 <div class="ui huge fixed inverted menu">
   <div class="ui container">
-    <a [routerLink]="['/']" class="header item">
-      <i class="users icon"></i>
-      <!--<img class="logo" src="">-->
-      SATS </a>
-    <div class="right menu">
-      <a class="item" [routerLink]="['/getting-started']" [routerLinkActive]="['router-link-active']"
-         [routerLinkActiveOptions]="{exact:true}">Getting started</a>
-      <a class="item" [routerLink]="['/sats-web']" [routerLinkActive]="['router-link-active']"
-         [routerLinkActiveOptions]="{exact:true}">SATS-WEB</a>
-      <a class="item" [routerLink]="['/about']" [routerLinkActive]="['router-link-active']"
-         [routerLinkActiveOptions]="{exact:true}">About</a>
-    </div>
+    <a [routerLink]="['/']" class="header item">Home</a>
+    <a class="item" [routerLink]="['/sats-web']" [routerLinkActive]="['router-link-active']"
+       [routerLinkActiveOptions]="{exact:true}">SATS Web Interface</a>
   </div>
 </div>

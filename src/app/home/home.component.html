@@ -7,103 +7,82 @@
 <div class="ui hidden divider"></div>
 
 <div class="ui container">
-  <h2 class="ui dividing header">
-    Welcome!
-  </h2>
+  <h2 class="ui dividing header">What is SATS?</h2>
   <p>
-    On this page you will find all information about SATS, the Spectrum Action Test Suite.
-    SATS is based on the Paper "SATS: A Universal Spectrum Auction Test Suite", published at AAMAS 2017. It can be
-    downloaded <a href="http://www.ifi.uzh.ch/ce/publications/SATS_Weiss_et_al_AAMAS_2017.pdf">here</a>.
+    SATS is a universal "Spectrum Auction Test Suite". It contains seven value models (some stylized and some realistic)
+    for spectrum auctions. The SATS software provides auction instance generators for each of the value models, i.e.,
+    it allows a user to generate an arbitrary number of auction instances for any of the spectrum value models.
+    For three of the models, SATS also contains a MIP formulation for the winner determination problem, which enables
+    users to quickly find the efficient allocation of the auction.
   </p>
 
-  <p>SATS consists of three components:</p>
-  <div class="ui equal width stackable grid">
-    <div class="ui column">
-      <div class="ui segment fullheight">
-        <h4 class="ui header center aligned">SATS-WEB</h4>
-        <p>
-          For basic use of SATS we provide a web application. No installation is required - everything in done in your
-          browser.
-        </p>
-      </div>
+  <h2 class="ui dividing header">People</h2>
+  <div class="ui bulleted list">
+    <div class="item">Michael Weiss</div>
+    <div class="item"><a href="https://www.ifi.uzh.ch/en/ce/people/seuken/.html">Prof. Dr. Sven Seuken</a>, University of Zurich</div>
+    <div class="item"><a href="http://www.bu.edu/systems/people/lubin/">Prof. Dr. Ben Lubin</a>, Boston University</div>
+    <div class="item">Fabio Isler, University of Zurich</div>
+  </div>
+  <!--List of other contributors:
+  <div class="ui list">
+    <div class="item">
+      <i class="angle right icon"></i>
+      <div class="content">Nicolas Küchler</div>
     </div>
-    <div class="column">
-      <div class="ui segment fullheight">
-        <h4 class="ui header center aligned">SATS-CORE and SATS-OPT</h4>
-        <p>
-          For advanced use of SATS we provide a Java library which allows scalable and configurable experimental setups.
-        </p>
-      </div>
+  </div>-->
+
+  <h2 class="ui dividing header">Software</h2>
+  <p>
+    SATS can be accessed in three different ways, to ensure it can be used for very basic and very sophisticated use
+    cases.
+  </p>
+  <div class="ui bulleted list">
+    <div class="item"><a [routerLink]="['/sats-web']" [routerLinkActive]="['router-link-active']"
+                         [routerLinkActiveOptions]="{exact:true}">SATS Web Interface</a></div>
+    <div class="item">
+      SATS Command Line Tool <a href="https://github.com/spectrumauctions/sats-clt" target="_blank"><i class="github icon black"></i></a>
     </div>
-    <div class="column">
-      <div class="ui segment fullheight">
-        <h4 class="ui header center aligned">SATS-CLT</h4>
-        <p>
-          For basic but scalable use of SATS we provide a command line tool (CLT) to generate value files in your
-          command line.
-        </p>
+    <div class="item">SATS Java source code:
+      <div class="ui bulleted list">
+        <div class="item">
+          <div class="header">
+            SATS-Core <a href="https://github.com/spectrumauctions/sats-core" target="_blank"><i class="github icon black"></i></a>
+          </div>
+          Contains all value models and all features of SATS, except for the winner determination solvers
+        </div>
+        <div class="item">
+          <div class="header">
+            SATS-Opt <a href="https://github.com/spectrumauctions/sats-opt" target="_blank"><i class="github icon black"></i></a>
+          </div>
+          Contains only the winner determination solvers
+        </div>
       </div>
     </div>
   </div>
+  <p>
+    Contributions are welcome. If you want to contribute to the software, please contact us or follow the contribution
+    guidelines in our
+    <a href="https://github.com/spectrumauctions">Github Projects</a>.
+  </p>
+
+  <h2 class="ui dividing header">Paper</h2>
+  <p>
+    For a detailed description of SATS, its features, and in particular the Multi-Region Value Model (MRVM) contained
+    in SATS, please see the following paper:
+  </p>
+  <p>
+    <b>SATS: A Universal Spectrum Auction Test Suite.</b><br>
+    Michael Weiss, Benjamin Lubin, and Sven Seuken. In <i>Proceedings of the 16th International Conference on Autonomous
+    Agents and Multiagent Systems (AAMAS)</i>, São Paulo, Brazil, May 2017
+    [<a href="http://www.ifi.uzh.ch/ce/publications/SATS_Weiss_et_al_AAMAS_2017.pdf" target="_blank">pdf</a>]
+  </p>
+  <p>
+    If you use SATS for academic use, please cite the above in your work.
+  </p>
+
+  <h2 class="ui dividing header">Contact</h2>
+  <p>
+    If you have any questions or comments, please email us at: <a href="mailto:sats@ifi.uzh.ch">sats@ifi.uzh.ch</a>
+  </p>
+
 </div>
-
-
-<!--
-
-<div class="ui vertical stripe segment">
-  <div class="ui middle aligned stackable grid container">
-    <div class="row">
-      <div class="eight wide column">
-        <h3 class="ui header">We Help Companies and Companions</h3>
-        <p>We can give your company superpowers to do things that they never thought possible. Let us delight your
-          customers and empower your needs...through pure data analytics.</p>
-        <h3 class="ui header">We Make Bananas That Can Dance</h3>
-        <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
-      </div>
-      <div class="six wide right floated column">
-        <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
-      </div>
-    </div>
-    <div class="row">
-      <div class="center aligned column">
-        <a class="ui huge button">Check Them Out</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="ui vertical stripe quote segment">
-  <div class="ui equal width stackable internally celled grid">
-    <div class="center aligned row">
-      <div class="column">
-        <h3>"What a Company"</h3>
-        <p>That is what they all say about us</p>
-      </div>
-      <div class="column">
-        <h3>"I shouldn't have gone with their competitor."</h3>
-        <p>
-          <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="ui vertical stripe segment">
-  <div class="ui text container">
-    <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
-    <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by
-      providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your
-      attention.</p>
-    <a class="ui large button">Read More</a>
-    <h4 class="ui horizontal header divider">
-      <a href="#">Case Studies</a>
-    </h4>
-    <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
-    <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It
-      took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
-    <a class="ui large button">I'm Still Quite Interested</a>
-  </div>
-</div>
--->
