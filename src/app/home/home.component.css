@@ -1,3 +1,7 @@
 .fullheight {
   min-height: 100%;
 }
+
+.rightmargin {
+  margin-right: 10px;
+}

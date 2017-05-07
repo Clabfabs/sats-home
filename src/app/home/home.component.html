@@ -23,13 +23,15 @@
     <div class="item"><a href="http://www.bu.edu/systems/people/lubin/">Prof. Dr. Ben Lubin</a>, Boston University</div>
     <div class="item">Fabio Isler, University of Zurich</div>
   </div>
-  <!--List of other contributors:
+  List of other contributors:
   <div class="ui list">
     <div class="item">
       <i class="angle right icon"></i>
-      <div class="content">Nicolas Küchler</div>
+      <div class="content">
+        <a href="https://github.com/spectrumauctions/sats-core/blob/master/CONTRIBUTORS.md" target="_blank">CONTRIBUTORS.md</a>
+      </div>
     </div>
-  </div>-->
+  </div>
 
   <h2 class="ui dividing header">Software</h2>
   <p>
@@ -40,19 +42,43 @@
     <div class="item"><a [routerLink]="['/sats-web']" [routerLinkActive]="['router-link-active']"
                          [routerLinkActiveOptions]="{exact:true}">SATS Web Interface</a></div>
     <div class="item">
-      SATS Command Line Tool <a href="https://github.com/spectrumauctions/sats-clt" target="_blank"><i class="github icon black"></i></a>
+      <span class="rightmargin">SATS Command Line Tool</span>
+      <div class="ui basic horizontal label">
+        <a href="https://github.com/spectrumauctions/sats-clt/raw/master/executable/sats.jar" target="_blank">
+          <i class="arrow down icon black"></i>
+          JAR
+        </a>
+      </div>
+      <div class="ui basic horizontal label">
+        <a href="https://github.com/spectrumauctions/sats-clt" target="_blank">
+          <i class="github icon black"></i>
+          Github
+        </a>
+      </div>
     </div>
     <div class="item">SATS Java source code:
       <div class="ui bulleted list">
         <div class="item">
           <div class="header">
-            SATS-Core <a href="https://github.com/spectrumauctions/sats-core" target="_blank"><i class="github icon black"></i></a>
+            <span class="rightmargin">SATS-Core</span>
+            <div class="ui basic horizontal label">
+              <a href="https://github.com/spectrumauctions/sats-core" target="_blank">
+                <i class="github icon black"></i>
+                Github
+              </a>
+            </div>
           </div>
           Contains all value models and all features of SATS, except for the winner determination solvers
         </div>
         <div class="item">
           <div class="header">
-            SATS-Opt <a href="https://github.com/spectrumauctions/sats-opt" target="_blank"><i class="github icon black"></i></a>
+            <span class="rightmargin">SATS-Opt</span>
+            <div class="ui basic horizontal label">
+              <a href="https://github.com/spectrumauctions/sats-opt" target="_blank">
+                <i class="github icon black"></i>
+                Github
+              </a>
+            </div>
           </div>
           Contains only the winner determination solvers
         </div>
