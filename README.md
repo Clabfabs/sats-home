@@ -16,7 +16,7 @@ Easiest way is to use angular-cli-ghpages: `npm i -g angular-cli-ghpages`
 
 Run `ng build --prod --base-href "https://spectrumauctions.github.io/"` to build the project.
 
-Publish with `ngh --repo=https://spectrumauctions.github.io/ --branch="master"`.
+Publish with `ngh --repo=https://github.com/spectrumauctions/spectrumauctions.github.io --branch=master`.
 
 
 ## Running unit tests
