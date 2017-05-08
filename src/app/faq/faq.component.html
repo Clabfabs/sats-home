@@ -2,10 +2,34 @@
   <div class="ui hidden divider"></div>
 
   <h2 class="ui dividing header">What are the differences between the three ways to access SATS?</h2>
-  <p>
-    <!--TODO-->
-  </p>
-
+  <div class="ui bulleted list">
+    <div class="item">
+      <div class="header">SATS Core API (<code>sats-core</code>):</div>
+      <div class="content">A java library to use in you own java code. It includes a wide variety of spectrum
+      value models and allows to configure and to generate new test problem instances
+      from these value models. This includes generating value functions in different
+      bidding languages. Should you require to solve the winner determination problems
+      of the generated problem instances, we recommend you to use <code>sats-opt</code>, which
+        extends <code>sats-core</code>.
+      </div>
+    </div>
+    <div class="item">
+      <div class="header">SATS Web Application (<code>sats-web</code>):</div>
+      <div class="content">A very easy to use web interface to generate test problem
+        instances (i.e., value files) directly in your browser, without having to install
+        anything. There are some parameters to parameterize the generated value function,
+        yet not quite as many as <code>sats-core</code>.
+      </div>
+    </div>
+    <div class="item">
+      <div class="header">SATS Command Line Tool (<code>sats-clt</code>):</div>
+      <div class="content">An executable jar, allowing to generate test problem instances
+        (i.e., value files) in your command line. The available options to configure the
+        generated problems are limited. There are some parameters to parameterize the
+        generated value function, yet not quite as many as <code>sats-core</code>.
+      </div>
+    </div>
+  </div>
   <h2 class="ui dividing header">For which value models does SATS already contain the MIP formulation?</h2>
   <p>Currently, SATS includes a MIP for the following value models:</p>
   <ul>
