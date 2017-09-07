@@ -6,7 +6,6 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod && echo spectrumauctions.org > dist/CNAME",
-    "publish": "ngh --repo=https://github.com/spectrumauctions/spectrumauctions.github.io --branch=master",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
