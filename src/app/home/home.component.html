@@ -9,19 +9,25 @@
 <div class="ui container">
   <h2 class="ui dividing header">What is SATS?</h2>
   <p>
-    SATS is a universal "Spectrum Auction Test Suite" that was developed at the <a href="http://www.uzh.ch/"target="_blank">
-    University of Zurich</a> in collaboration with <a href="http://www.bu.edu/" target="_blank">Boston University</a>.
-    SATS contains seven value models (some stylized and some realistic) for spectrum auctions. The SATS software provides
-    auction instance generators for each of the value models, i.e., it allows a user to generate an arbitrary number of
-    auction instances for any of the spectrum value models. For three of the models, SATS also contains a MIP formulation
-    for the winner determination problem, which enables users to quickly find the efficient allocation of the auction.
+    SATS is a universal "Spectrum Auction Test Suite" that was developed at the
+    <a href="http://www.uzh.ch/" target="_blank"> University of Zurich</a> in collaboration with
+    <a href="http://www.bu.edu/" target="_blank">Boston University</a>.
+    SATS contains seven value models (some stylized and some realistic) for spectrum auctions. The SATS software
+    provides auction instance generators for each of the value models, i.e., it allows a user to generate an arbitrary
+    number of auction instances for any of the spectrum value models. For three of the models, SATS also contains a MIP
+    formulation for the winner determination problem, which enables users to quickly find the efficient allocation of
+    the auction.
   </p>
 
   <h2 class="ui dividing header">People</h2>
   <div class="ui bulleted list">
     <div class="item">Michael Weiss</div>
-    <div class="item"><a href="https://www.ifi.uzh.ch/en/ce/people/seuken/.html">Prof. Dr. Sven Seuken</a>, University of Zurich</div>
-    <div class="item"><a href="http://www.bu.edu/systems/people/lubin/">Prof. Dr. Ben Lubin</a>, Boston University</div>
+    <div class="item">
+      <a href="https://www.ifi.uzh.ch/en/ce/people/seuken/.html">Prof. Dr. Sven Seuken</a>, University of Zurich
+    </div>
+    <div class="item">
+      <a href="http://www.bu.edu/systems/people/lubin/">Prof. Dr. Ben Lubin</a>, Boston University
+    </div>
     <div class="item">Fabio Isler, University of Zurich</div>
   </div>
   List of other contributors:
@@ -40,25 +46,35 @@
     cases. Here, we provide links to the most recent releases. Older versions can be found in the Github repositories.
   </p>
   <div class="ui bulleted list">
-    <div class="item"><a [routerLink]="['/sats-web']" [routerLinkActive]="['router-link-active']"
-                         [routerLinkActiveOptions]="{exact:true}">SATS Web Interface</a></div>
     <div class="item">
+      <div class="header">
+        <a [routerLink]="['/sats-web']" [routerLinkActive]="['router-link-active']"
+           [routerLinkActiveOptions]="{exact:true}">
+          SATS Web Interface
+        </a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="header">
       <span class="rightmargin">
         SATS Command Line Tool
-        (<a href="https://github.com/spectrumauctions/sats-clt/releases/tag/0.4.0" target="_blank">v. 0.4.0</a>, May 7, 2017)
+        (<a href="https://github.com/spectrumauctions/sats-clt/releases/tag/v0.5.0" target="_blank">v0.5.0</a>,
+        September 7, 2017)
       </span>
-      <div class="ui basic horizontal label">
-        <a href="https://github.com/spectrumauctions/sats-clt/raw/master/executable/sats.jar" target="_blank">
-          <i class="arrow down icon black"></i>
-          JAR
-        </a>
+        <div class="ui basic horizontal label">
+          <a href="https://github.com/spectrumauctions/sats-clt/releases/download/v0.5.0/sats.jar" target="_blank">
+            <i class="arrow down icon black"></i>
+            JAR
+          </a>
+        </div>
+        <div class="ui basic horizontal label">
+          <a href="https://github.com/spectrumauctions/sats-clt" target="_blank">
+            <i class="github icon black"></i>
+            Github
+          </a>
+        </div>
       </div>
-      <div class="ui basic horizontal label">
-        <a href="https://github.com/spectrumauctions/sats-clt" target="_blank">
-          <i class="github icon black"></i>
-          Github
-        </a>
-      </div>
+      Allows generation of auction instances (i.e., value files) via command line with limited parametrization options
     </div>
     <div class="item">SATS Java source code:
       <div class="ui bulleted list">
@@ -66,8 +82,16 @@
           <div class="header">
             <span class="rightmargin">
               SATS-Core
-              (<a href="https://github.com/spectrumauctions/sats-core/releases/tag/0.4.0" target="_blank">v. 0.4.0</a>, May 7, 2017)
+              (<a href="https://github.com/spectrumauctions/sats-core/releases/tag/v0.5.0" target="_blank">v0.5.0</a>,
+              September 7, 2017)
             </span>
+            <div class="ui basic horizontal label">
+              <a href="https://github.com/spectrumauctions/sats-core/releases/download/v0.5.0/sats-core-0.5.0.jar"
+                 target="_blank">
+                <i class="arrow down icon black"></i>
+                JAR
+              </a>
+            </div>
             <div class="ui basic horizontal label">
               <a href="https://github.com/spectrumauctions/sats-core" target="_blank">
                 <i class="github icon black"></i>
@@ -81,8 +105,16 @@
           <div class="header">
             <span class="rightmargin">
               SATS-Opt
-              (<a href="https://github.com/spectrumauctions/sats-opt/releases/tag/0.4.0" target="_blank">v. 0.4.0</a>, May 7, 2017)
+              (<a href="https://github.com/spectrumauctions/sats-opt/releases/tag/v0.5.0" target="_blank">v0.5.0</a>,
+              September 7, 2017)
             </span>
+            <div class="ui basic horizontal label">
+              <a href="https://github.com/spectrumauctions/sats-opt/releases/download/v0.5.0/sats-opt-0.5.0.jar"
+                 target="_blank">
+                <i class="arrow down icon black"></i>
+                JAR
+              </a>
+            </div>
             <div class="ui basic horizontal label">
               <a href="https://github.com/spectrumauctions/sats-opt" target="_blank">
                 <i class="github icon black"></i>
@@ -96,7 +128,9 @@
     </div>
   </div>
   <p>
-    <b>Email List:</b> If you use the SATS software, please subscribe to our email list <a href="https://lists.ifi.uzh.ch/listinfo/sats" target="_blank">here</a> such that we can inform you whenever we are releasing a new version of SATS.
+    <b>Email List:</b> If you use the SATS software, please subscribe to our email list <a
+    href="https://lists.ifi.uzh.ch/listinfo/sats" target="_blank">here</a> such that we can inform you whenever we are
+    releasing a new version of SATS.
   </p>
   <p>
     We are releasing SATS under the GNU Affero license. Contributions are welcome. If you want to contribute to the
@@ -124,7 +158,9 @@
     If you have any questions or comments, please email us at: <a href="mailto:sats@ifi.uzh.ch">sats@ifi.uzh.ch</a>
   </p>
   <p>
-    <b>Email List:</b> If you use the SATS software, please subscribe to our email list <a href="https://lists.ifi.uzh.ch/listinfo/sats" target="_blank">here</a> such that we can inform you whenever we are releasing a new version of SATS.
+    <b>Email List:</b> If you use the SATS software, please subscribe to our email list <a
+    href="https://lists.ifi.uzh.ch/listinfo/sats" target="_blank">here</a> such that we can inform you whenever we are
+    releasing a new version of SATS.
   </p>
 
 </div>
