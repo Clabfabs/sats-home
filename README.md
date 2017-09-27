@@ -14,9 +14,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Easiest way is to use angular-cli-ghpages: `npm i -g angular-cli-ghpages`
 
-Run `ng build --prod && echo spectrumauctions.org > dist/CNAME` to build the project and then add the CNAME file.
-
-Publish with `ngh --repo=https://github.com/spectrumauctions/spectrumauctions.github.io --branch=master`.
+Run `npm run release` to build and release.
 
 
 ## Running unit tests
