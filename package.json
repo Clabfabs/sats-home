@@ -10,7 +10,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "release": "ng build --prod && echo spectrumauctions.org > dist/CNAME && ngh --repo=https://github.com/spectrumauctions/spectrumauctions.github.io --branch=master"
-    
   },
   "private": true,
   "dependencies": {
