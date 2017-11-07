@@ -1,4 +1,3 @@
-import { SatsDataComponent } from './sats-data/sats-data.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  constructor(private satsData: SatsDataComponent) {
-
+  constructor() {
   }
+
 }

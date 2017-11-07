@@ -58,11 +58,11 @@
       <div class="header">
       <span class="rightmargin">
         SATS Command Line Tool
-        (<a [href]="satsData.getCltUrl()" target="_blank">{{satsData.getCltTag() || 'Loading...'}}</a>,
-        {{satsData.getCltDate() | date: 'longDate'}})
+        (<a [href]="data.getCltUrl()" target="_blank">{{data.getCltTag() || 'Loading...'}}</a>,
+        {{data.getCltDate() | date: 'longDate'}})
       </span>
         <div class="ui basic horizontal label">
-          <a [href]="satsData.getCltJarUrl()" target="_blank">
+          <a [href]="data.getCltJarUrl()" target="_blank">
             <i class="arrow down icon black"></i>
             JAR
           </a>
@@ -82,11 +82,11 @@
           <div class="header">
             <span class="rightmargin">
               SATS-Core
-              (<a [href]="satsData.getCoreUrl()" target="_blank">{{satsData.getCoreTag() || 'Loading...'}}</a>,
-              {{satsData.getCoreDate() | date: 'longDate'}})
+              (<a [href]="data.getCoreUrl()" target="_blank">{{data.getCoreTag() || 'Loading...'}}</a>,
+              {{data.getCoreDate() | date: 'longDate'}})
             </span>
             <div class="ui basic horizontal label">
-              <a [href]="satsData.getCoreJarUrl()" target="_blank">
+              <a [href]="data.getCoreJarUrl()" target="_blank">
                 <i class="arrow down icon black"></i>
                 JAR
               </a>
@@ -104,11 +104,11 @@
           <div class="header">
             <span class="rightmargin">
               SATS-Opt
-              (<a [href]="satsData.getOptUrl()" target="_blank">{{satsData.getOptTag() || 'Loading...'}}</a>,
-              {{satsData.getOptDate() | date: 'longDate'}})
+              (<a [href]="data.getOptUrl()" target="_blank">{{data.getOptTag() || 'Loading...'}}</a>,
+              {{data.getOptDate() | date: 'longDate'}})
             </span>
             <div class="ui basic horizontal label">
-              <a [href]="satsData.getOptJarUrl()"
+              <a [href]="data.getOptJarUrl()"
                  target="_blank">
                 <i class="arrow down icon black"></i>
                 JAR

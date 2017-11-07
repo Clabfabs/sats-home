@@ -7,17 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./api-usage.component.css']
 })
 export class ApiUsageComponent implements OnInit {
+  data: SatsDataComponent;
 
   constructor(private satsData: SatsDataComponent) {
-
+    this.data = satsData;
   }
 
   getCoreVersion() {
-    return this.satsData.getCoreTag() ? this.satsData.getCoreTag().substring(1) : null;
+    return this.satsData.getCoreTag().replace('v', '');
   }
 
   getOptVersion() {
-    return this.satsData.getOptTag() ? this.satsData.getOptTag().substring(1) : null;
+    return this.satsData.getOptTag().replace('v', '');
   }
 
   ngOnInit() {
