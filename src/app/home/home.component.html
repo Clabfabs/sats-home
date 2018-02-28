@@ -43,7 +43,7 @@
   <h2 class="ui dividing header">Software</h2>
   <p>
     SATS can be accessed in three different ways, to ensure it can be used for very basic and very sophisticated use
-    cases. Here, we provide links to the most recent releases. Older versions can be found in the Github repositories.
+    cases. Here, we provide links to the most recent releases. Older versions can be found in the Github repository.
   </p>
   <div class="ui bulleted list">
     <div class="item">
@@ -56,72 +56,40 @@
     </div>
     <div class="item">
       <div class="header">
-      <span class="rightmargin">
-        SATS Command Line Tool
-        (<a [href]="data.getCltUrl()" target="_blank">{{data.getCltTag() || 'Loading...'}}</a>,
-        {{data.getCltDate() | date: 'longDate'}})
-      </span>
+        <span class="rightmargin">
+          SATS Java source code
+          (<a [href]="data.getSatsUrl()" target="_blank">{{data.getSatsTag() || 'Loading...'}}</a>,
+          {{data.getSatsDate() | date: 'longDate'}}):
+        </span>
         <div class="ui basic horizontal label">
-          <a [href]="data.getCltJarUrl()" target="_blank">
-            <i class="arrow down icon black"></i>
-            JAR
-          </a>
-        </div>
-        <div class="ui basic horizontal label">
-          <a href="https://github.com/spectrumauctions/sats-clt" target="_blank">
-            <i class="github icon black"></i>
-            Github
-          </a>
-        </div>
+            <a [href]="data.getSatsJarUrl()" target="_blank">
+              <i class="arrow down icon black"></i>
+              JAR
+            </a>
+          </div>
+          <div class="ui basic horizontal label">
+            <a href="https://github.com/spectrumauctions/sats" target="_blank">
+              <i class="github icon black"></i>
+              Github
+            </a>
+          </div>
       </div>
-      Allows generation of auction instances (i.e., value files) via command line with limited parametrization options
-    </div>
-    <div class="item">SATS Java source code:
       <div class="ui bulleted list">
         <div class="item">
           <div class="header">
-            <span class="rightmargin">
-              SATS-Core
-              (<a [href]="data.getCoreUrl()" target="_blank">{{data.getCoreTag() || 'Loading...'}}</a>,
-              {{data.getCoreDate() | date: 'longDate'}})
-            </span>
-            <div class="ui basic horizontal label">
-              <a [href]="data.getCoreJarUrl()" target="_blank">
-                <i class="arrow down icon black"></i>
-                JAR
-              </a>
-            </div>
-            <div class="ui basic horizontal label">
-              <a href="https://github.com/spectrumauctions/sats-core" target="_blank">
-                <i class="github icon black"></i>
-                Github
-              </a>
-            </div>
+            Command Line Tool
           </div>
-          Contains all value models and all features of SATS, except for the winner determination solvers
+          Using the <code>jar</code> file directly, it's possible to generate auction instances (i.e., value files) via command line with limited parametrization options.<br>
+          Its usage is described <a href="https://github.com/spectrumauctions/sats#getting-started-with-sats-as-a-command-line-tool" target="_blank">here</a>.
         </div>
         <div class="item">
           <div class="header">
-            <span class="rightmargin">
-              SATS-Opt
-              (<a [href]="data.getOptUrl()" target="_blank">{{data.getOptTag() || 'Loading...'}}</a>,
-              {{data.getOptDate() | date: 'longDate'}})
-            </span>
-            <div class="ui basic horizontal label">
-              <a [href]="data.getOptJarUrl()"
-                 target="_blank">
-                <i class="arrow down icon black"></i>
-                JAR
-              </a>
-            </div>
-            <div class="ui basic horizontal label">
-              <a href="https://github.com/spectrumauctions/sats-opt" target="_blank">
-                <i class="github icon black"></i>
-                Github
-              </a>
-            </div>
+            APIs
           </div>
-          Contains only the winner determination solvers
+          Including the <code>jar</code> file as a dependency via Maven or manually in a project allows using all features of SATS.<br>
+          The <i>Core API</i> is used to access and modify all of sats value models to generate value function instances for your simulations.<br>
+          The <i>Optimization API</i> is based on the Core API and provides winner determination problem (WDP) solvers.<br>
+          More information on the API usage can be found in the <a [routerLink]="['/api-usage']">API Usage</a> section.
         </div>
       </div>
     </div>

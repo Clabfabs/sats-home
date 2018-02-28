@@ -6,26 +6,26 @@
   <h3 class="ui dividing header">1. What are the differences between the three ways to access SATS?</h3>
   <div class="ui bulleted list">
     <div class="item">
-      <div class="header">SATS Web Application (<code>sats-web</code>):</div>
+      <div class="header">SATS Web Application</div>
       <div class="content">An easy-to-use web interface to generate auction
         instances (i.e., value files) directly in your browser, without having to install
         anything. The web interface allows for very light parametrization of the value models.
       </div>
     </div>
     <div class="item">
-      <div class="header">SATS Command Line Tool (<code>sats-clt</code>):</div>
+      <div class="header">Using <code>sats.jar</code> as a command line tool</div>
       <div class="content">An executable jar, allowing the generation of auction instances
         (i.e., value files) in your command line. The available options allow for some parametrization of the generated
-        value functions, yet not quite as much as <code>sats-core</code>.
+        value functions, yet not quite as much as when using the <i>Core API</i>.
       </div>
     </div>
     <div class="item">
-      <div class="header">SATS API (<code>sats-core</code> / <code>sats-opt</code>):</div>
-      <div class="content">Java libraries to use in your own java code.
-        Via the <code>sats-core</code> API, you gain access to the full feature set of SATS, including the ability to change all parameters of
+      <div class="header">Using the APIs in your own java code</div>
+      <div class="content">
+        Via the <i>Core API</i>, you gain access to the full feature set of SATS, including the ability to change all parameters of
         the value models, requesting values for the bundles on the fly, etc.<br>
         If you need to solve the winner determination problem for a generated auction instance, you can use
-        <code>sats-opt</code> API, which extends the <code>sats-core</code> API.
+        <i>Optimization API</i>, which extends the <i>Core API</i>.
       </div>
     </div>
   </div>

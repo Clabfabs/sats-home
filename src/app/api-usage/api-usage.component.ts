@@ -13,12 +13,8 @@ export class ApiUsageComponent implements OnInit {
     this.data = satsData;
   }
 
-  getCoreVersion() {
-    return this.satsData.getCoreTag().replace('v', '');
-  }
-
-  getOptVersion() {
-    return this.satsData.getOptTag().replace('v', '');
+  getSatsVersion() {
+    return this.satsData.getSatsTag().replace('v', '');
   }
 
   ngOnInit() {

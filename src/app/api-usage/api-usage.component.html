@@ -2,37 +2,30 @@
   <div class="ui hidden divider"></div>
 
   <h2 class="ui dividing header">API Usage</h2>
-  <p>To use SATS in your own code, you can either use <code>sats-core</code> to generate auction instances or <code>sats-opt</code>, which extens <code>sats-core</code>, to solve the winner determination problems.</p>
+  <p>SATS provides two APIs: The <i>Core API</i> to generate auction instances and the <i>Optimization API</i>, which extends the Core API by solving the winner determination problems.</p>
 
   <h3 class="ui dividing header">Getting started</h3>
-  <p>Both components are deployed on Maven Central, so with Maven, including <code>sats-core</code> is as easy as:</p>
+  <p>Both APIs are bundled in one package and deployed on Maven Central. Hence, with Maven, including <code>sats</code> is as easy as:</p>
   <pre class="ui grey segment"><code>
     &lt;dependency&gt;
       &lt;groupId&gt;<b>org.spectrumauctions</b>&lt;/groupId&gt;
-      &lt;artifactId&gt;<b>sats-core</b>&lt;/artifactId&gt;
-      &lt;version&gt;<b>{{getCoreVersion() || 'Loading...'}}</b>&lt;/version&gt;
+      &lt;artifactId&gt;<b>sats</b>&lt;/artifactId&gt;
+      &lt;version&gt;<b>{{getSatsVersion() || 'Loading...'}}</b>&lt;/version&gt;
     &lt;/dependency&gt;
   </code></pre>
-  <p>Or, for <code>sats-opt</code>:</p>
-  <pre class="ui grey segment"><code>
-      &lt;dependency&gt;
-        &lt;groupId&gt;<b>org.spectrumauctions</b>&lt;/groupId&gt;
-        &lt;artifactId&gt;<b>sats-opt</b>&lt;/artifactId&gt;
-        &lt;version&gt;<b>{{getOptVersion() || 'Loading...'}}</b>&lt;/version&gt;
-      &lt;/dependency&gt;
-    </code></pre>
+
   <p>This is enough information for Maven to download the dependency automatically.</p>
 
   <h4 class="ui header">Alternative without Maven:</h4>
   <p>
-    Both APIs are available as precompiled jar-files on Github (see <a [routerLink]="['/']">Home</a>).
+    The pre-compiled <code>jar</code> files are also available on Github (see <a [routerLink]="['/']">Home</a>).
     You can include them in your project directly.
   </p>
 
   <h2 class="ui dividing header">Examples</h2>
   <p>To see how to use the respective APIs, check out the examples on GitHub:</p>
   <ul>
-    <li><a href="https://github.com/spectrumauctions/sats-core/tree/master/src/test/java/org/spectrumauctions/sats/core/examples" target="_blank"><code>sats-core</code> examples</a></li>
-    <li><a href="https://github.com/spectrumauctions/sats-opt/tree/master/src/test/java/org/spectrumauctions/sats/opt/examples" target="_blank"><code>sats-opt</code> examples</a></li>
+    <li><a href="https://github.com/spectrumauctions/sats/tree/master/src/test/java/org/spectrumauctions/sats/core/examples" target="_blank">Core API examples</a></li>
+    <li><a href="https://github.com/spectrumauctions/sats/tree/master/src/test/java/org/spectrumauctions/sats/opt/examples" target="_blank">Optimization API examples</a></li>
   </ul>
 </div>
