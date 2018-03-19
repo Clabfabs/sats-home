@@ -11,15 +11,15 @@ export class SatsDataComponent {
 
   constructor(private http: Http) {
     this.backupVersion = '0.6.0';
-    this.backupDate = '2018-03-05';
+    this.backupDate = '2018-03-19';
     this.satsBackup = {
-      html_url: 'https://github.com/spectrumauctions/sats-core/releases/tag/v' + this.backupVersion,
+      html_url: 'https://github.com/spectrumauctions/sats/releases/tag/v' + this.backupVersion,
       tag_name: 'v' + this.backupVersion,
-      assets: [{browser_download_url: 'https://github.com/spectrumauctions/sats-core/releases/download/v'
-        + this.backupVersion + '/sats.jar'}],
+      assets: [{browser_download_url: 'https://github.com/spectrumauctions/sats/releases/download/v'
+        + this.backupVersion + '/sats-' + this.backupVersion + '.jar'}],
       published_at: this.backupDate
     };
-    this.http.get('https://api.github.com/repos/spectrumauctions/sats-core/releases/latest')
+    this.http.get('https://api.github.com/repos/spectrumauctions/sats/releases/latest')
       .subscribe(res => this.sats = res.json());
   }
 
