@@ -3,34 +3,55 @@
 
   <h2 class="ui dividing header">Frequently Asked Questions</h2>
 
-  <h3 class="ui dividing header">1. What are the differences between the three ways to access SATS?</h3>
+  <h3 class="ui dividing header">
+    1. What are the different ways ways to access SATS?
+  </h3>
   <div class="ui bulleted list">
-    <div class="item">
-      <div class="header">SATS Web Application</div>
-      <div class="content">An easy-to-use web interface to generate auction
-        instances (i.e., value files) directly in your browser, without having to install
-        anything. The web interface allows for very light parametrization of the value models.
-      </div>
-    </div>
-    <div class="item">
-      <div class="header">Using <code>sats.jar</code> as a command line tool</div>
-      <div class="content">An executable jar, allowing the generation of auction instances
-        (i.e., value files) in your command line. The available options allow for some parametrization of the generated
-        value functions, yet not quite as much as when using the <i>Core API</i>.
-      </div>
-    </div>
     <div class="item">
       <div class="header">Using the APIs in your own java code</div>
       <div class="content">
-        Via the <i>Core API</i>, you gain access to the full feature set of SATS, including the ability to change all parameters of
-        the value models, requesting values for the bundles on the fly, etc.<br>
-        If you need to solve the winner determination problem for a generated auction instance, you can use
+        Via the <i>Core API</i>, you gain access to the full feature set of
+        SATS, including the ability to change all parameters of the value
+        models, requesting values for the bundles on the fly, etc.<br />
+        If you need to solve the winner determination problem for a generated
+        auction instance, you can use
         <i>Optimization API</i>, which extends the <i>Core API</i>.
       </div>
     </div>
+    <div class="item">
+      <div class="header">Using the Python bridge in your own python code</div>
+      <div class="content">
+        If you prefer to use SATS in your Python project, you can access some of
+        the features of SATS via
+        <a href="https://github.com/marketdesignresearch/pysats" target="_blank"
+          >PySats</a
+        >. For instructions on how to use this, check out the GitHub page.
+      </div>
+    </div>
+    <div class="item">
+      <div class="header">
+        Using <code>sats.jar</code> as a command line tool
+      </div>
+      <div class="content">
+        An executable jar, allowing the generation of auction instances (i.e.,
+        value files) in your command line. The available options allow for some
+        parametrization of the generated value functions, yet not quite as much
+        as when using the <i>Core API</i>.
+      </div>
+    </div>
+    <div class="item">
+      <div class="header">SATS Web Application</div>
+      <div class="content">
+        An easy-to-use web interface to generate auction instances (i.e., value
+        files) directly in your browser, without having to install anything. The
+        web interface allows for very light parametrization of the value models.
+      </div>
+    </div>
   </div>
-  <h3 class="ui dividing header">2. For which value models does SATS already contain the MIP formulation to solve the
-    winner determination problem?</h3>
+  <h3 class="ui dividing header">
+    2. For which value models does SATS already contain the MIP formulation to
+    solve the winner determination problem?
+  </h3>
   <p>Currently, SATS includes a MIP for the following value models:</p>
   <ul>
     <li>Multi-Region Value Model (MRVM)</li>

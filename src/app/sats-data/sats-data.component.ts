@@ -10,8 +10,8 @@ export class SatsDataComponent {
   satsBackup: SatsObj;
 
   constructor(private http: Http) {
-    this.backupVersion = '0.6.0';
-    this.backupDate = '2018-03-19';
+    this.backupVersion = '0.7.1';
+    this.backupDate = '2021-06-24';
     this.satsBackup = {
       html_url: 'https://github.com/spectrumauctions/sats/releases/tag/v' + this.backupVersion,
       tag_name: 'v' + this.backupVersion,

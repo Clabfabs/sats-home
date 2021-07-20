@@ -10,23 +10,29 @@
   <h2 class="ui dividing header">What is SATS?</h2>
   <p>
     SATS is a universal "Spectrum Auction Test Suite" that was developed at the
-    <a href="http://www.uzh.ch/" target="_blank"> University of Zurich</a> in collaboration with
-    <a href="http://www.bu.edu/" target="_blank">Boston University</a>.
-    SATS contains seven value models (some stylized and some realistic) for spectrum auctions. The SATS software
-    provides auction instance generators for each of the value models, i.e., it allows a user to generate an arbitrary
-    number of auction instances for any of the spectrum value models. For four of the models, SATS also contains a MIP
-    formulation for the winner determination problem, which enables users to quickly find the efficient allocation of
-    the auction.
+    <a href="http://www.uzh.ch/" target="_blank"> University of Zurich</a> in
+    collaboration with
+    <a href="http://www.bu.edu/" target="_blank">Boston University</a>. SATS
+    contains seven value models (some stylized and some realistic) for spectrum
+    auctions. The SATS software provides auction instance generators for each of
+    the value models, i.e., it allows a user to generate an arbitrary number of
+    auction instances for any of the spectrum value models. For four of the
+    models, SATS also contains a MIP formulation for the winner determination
+    problem, which enables users to quickly find the efficient allocation of the
+    auction.
   </p>
 
   <h2 class="ui dividing header">People</h2>
   <div class="ui bulleted list">
     <div class="item">Michael Weiss</div>
     <div class="item">
-      <a href="https://www.ifi.uzh.ch/en/ce/people/seuken/.html">Prof. Dr. Sven Seuken</a>, University of Zurich
+      <a href="https://www.ifi.uzh.ch/en/ce/people/seuken/.html"
+        >Prof. Dr. Sven Seuken</a
+      >, University of Zurich
     </div>
     <div class="item">
-      <a href="http://www.bu.edu/systems/people/lubin/">Prof. Dr. Ben Lubin</a>, Boston University
+      <a href="http://www.bu.edu/systems/people/lubin/">Prof. Dr. Ben Lubin</a>,
+      Boston University
     </div>
     <div class="item">Fabio Isler, University of Zurich</div>
   </div>
@@ -35,21 +41,29 @@
     <div class="item">
       <i class="angle right icon"></i>
       <div class="content">
-        <a href="https://github.com/spectrumauctions/sats-core/blob/master/CONTRIBUTORS.md" target="_blank">CONTRIBUTORS.md</a>
+        <a
+          href="https://github.com/spectrumauctions/sats-core/blob/master/CONTRIBUTORS.md"
+          target="_blank"
+          >CONTRIBUTORS.md</a
+        >
       </div>
     </div>
   </div>
 
   <h2 class="ui dividing header">Software</h2>
   <p>
-    SATS can be accessed in three different ways, to ensure it can be used for very basic and very sophisticated use
-    cases. Here, we provide links to the most recent releases. Older versions can be found in the Github repository.
+    SATS can be accessed in three different ways, to ensure it can be used for
+    very basic and very sophisticated use cases. Here, we provide links to the
+    most recent releases. Older versions can be found in the Github repository.
   </p>
   <div class="ui bulleted list">
     <div class="item">
       <div class="header">
-        <a [routerLink]="['/sats-web']" [routerLinkActive]="['router-link-active']"
-           [routerLinkActiveOptions]="{exact:true}">
+        <a
+          [routerLink]="['/sats-web']"
+          [routerLinkActive]="['router-link-active']"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
           SATS Web Interface
         </a>
       </div>
@@ -57,77 +71,115 @@
     <div class="item">
       <div class="header">
         <span class="rightmargin">
-          SATS Java source code
-          (<a [href]="data.getSatsUrl()" target="_blank">{{data.getSatsTag() || 'Loading...'}}</a>,
-          {{data.getSatsDate() | date: 'longDate'}}):
+          SATS Java source code (<a
+            [href]="data.getSatsUrl()"
+            target="_blank"
+            >{{ data.getSatsTag() || "Loading..." }}</a
+          >, {{ data.getSatsDate() | date: "longDate" }}):
         </span>
         <div class="ui basic horizontal label">
-            <a [href]="data.getSatsJarUrl()" target="_blank">
-              <i class="arrow down icon black"></i>
-              JAR
-            </a>
-          </div>
-          <div class="ui basic horizontal label">
-            <a href="https://github.com/spectrumauctions/sats" target="_blank">
-              <i class="github icon black"></i>
-              Github
-            </a>
-          </div>
+          <a [href]="data.getSatsJarUrl()" target="_blank">
+            <i class="arrow down icon black"></i>
+            JAR
+          </a>
+        </div>
+        <div class="ui basic horizontal label">
+          <a href="https://github.com/spectrumauctions/sats" target="_blank">
+            <i class="github icon black"></i>
+            Github
+          </a>
+        </div>
       </div>
       <div class="ui bulleted list">
         <div class="item">
-          <div class="header">
-            Command Line Tool
-          </div>
-          Using the <code>jar</code> file directly, it's possible to generate auction instances (i.e., value files) via command line with limited parametrization options.<br>
-          Its usage is described <a href="https://github.com/spectrumauctions/sats#getting-started-with-sats-as-a-command-line-tool" target="_blank">here</a>.
+          <div class="header">Command Line Tool</div>
+          Using the <code>jar</code> file directly, it's possible to generate
+          auction instances (i.e., value files) via command line with limited
+          parametrization options.<br />
+          Its usage is described
+          <a
+            href="https://github.com/spectrumauctions/sats#getting-started-with-sats-as-a-command-line-tool"
+            target="_blank"
+            >here</a
+          >.
         </div>
         <div class="item">
-          <div class="header">
-            APIs
-          </div>
-          Including the <code>jar</code> file as a dependency via Maven or manually in a project allows using all features of SATS.<br>
-          The <i>Core API</i> is used to access and modify all of sats value models to generate value function instances for your simulations.<br>
-          The <i>Optimization API</i> is based on the Core API and provides winner determination problem (WDP) solvers.<br>
-          More information on the API usage can be found in the <a [routerLink]="['/api-usage']">API Usage</a> section.
+          <div class="header">APIs</div>
+          Including the <code>jar</code> file as a dependency via Maven or
+          manually in a project allows using all features of SATS.<br />
+          The <i>Core API</i> is used to access and modify all of sats value
+          models to generate value function instances for your simulations.<br />
+          The <i>Optimization API</i> is based on the Core API and provides
+          winner determination problem (WDP) solvers.<br />
+          More information on the API usage can be found in the
+          <a [routerLink]="['/api-usage']">API Usage</a> section.
         </div>
       </div>
     </div>
+    <div class="item">
+      <div class="header">
+        <span class="rightmargin">PySats </span>
+        <div class="ui basic horizontal label">
+          <a
+            href="https://github.com/marketdesignresearch/pysats"
+            target="_blank"
+          >
+            <i class="github icon black"></i>
+            Github
+          </a>
+        </div>
+        <div class="ui basic horizontal label">
+          <a href="https://pypi.org/project/pysats/" target="_blank">
+            <i class="python icon black"></i>
+            PyPi
+          </a>
+        </div>
+      </div>
+      A Python bridge to use some of the SATS features directly in Python.
+    </div>
   </div>
   <p>
-    <b>Email List:</b> If you use the SATS software, please subscribe to our email list <a
-    href="https://lists.ifi.uzh.ch/listinfo/sats" target="_blank">here</a> such that we can inform you whenever we are
-    releasing a new version of SATS.
+    <b>Email List:</b> If you use the SATS software, please subscribe to our
+    email list
+    <a href="https://lists.ifi.uzh.ch/listinfo/sats" target="_blank">here</a>
+    such that we can inform you whenever we are releasing a new version of SATS.
   </p>
   <p>
-    We are releasing SATS under the GNU Affero license. Contributions are welcome. If you want to contribute to the
-    software, please contact us or follow the contribution guidelines in our
+    We are releasing SATS under the GNU Affero license. Contributions are
+    welcome. If you want to contribute to the software, please contact us or
+    follow the contribution guidelines in our
     <a href="https://github.com/spectrumauctions">Github Projects</a>.
   </p>
 
   <h2 class="ui dividing header">Paper</h2>
   <p>
-    For a detailed description of SATS, its features, and in particular the Multi-Region Value Model (MRVM) contained
-    in SATS, please see the following paper:
+    For a detailed description of SATS, its features, and in particular the
+    Multi-Region Value Model (MRVM) contained in SATS, please see the following
+    paper:
   </p>
   <p>
-    <b>SATS: A Universal Spectrum Auction Test Suite.</b><br>
-    Michael Weiss, Benjamin Lubin, and Sven Seuken. In <i>Proceedings of the 16th International Conference on Autonomous
-    Agents and Multiagent Systems (AAMAS)</i>, São Paulo, Brazil, May 2017
-    [<a href="http://www.ifi.uzh.ch/ce/publications/SATS_Weiss_et_al_AAMAS_2017.pdf" target="_blank">pdf</a>]
+    <b>SATS: A Universal Spectrum Auction Test Suite.</b><br />
+    Michael Weiss, Benjamin Lubin, and Sven Seuken. In
+    <i
+      >Proceedings of the 16th International Conference on Autonomous Agents and
+      Multiagent Systems (AAMAS)</i
+    >, São Paulo, Brazil, May 2017 [<a
+      href="http://www.ifi.uzh.ch/ce/publications/SATS_Weiss_et_al_AAMAS_2017.pdf"
+      target="_blank"
+      >pdf</a
+    >]
   </p>
-  <p>
-    If you use SATS for academic use, please cite the above in your work.
-  </p>
+  <p>If you use SATS for academic use, please cite the above in your work.</p>
 
   <h2 class="ui dividing header">Contact</h2>
   <p>
-    If you have any questions or comments, please email us at: <a href="mailto:sats@ifi.uzh.ch">sats@ifi.uzh.ch</a>
+    If you have any questions or comments, please email us at:
+    <a href="mailto:sats@ifi.uzh.ch">sats@ifi.uzh.ch</a>
   </p>
   <p>
-    <b>Email List:</b> If you use the SATS software, please subscribe to our email list <a
-    href="https://lists.ifi.uzh.ch/listinfo/sats" target="_blank">here</a> such that we can inform you whenever we are
-    releasing a new version of SATS.
+    <b>Email List:</b> If you use the SATS software, please subscribe to our
+    email list
+    <a href="https://lists.ifi.uzh.ch/listinfo/sats" target="_blank">here</a>
+    such that we can inform you whenever we are releasing a new version of SATS.
   </p>
-
 </div>
