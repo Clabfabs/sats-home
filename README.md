@@ -1,3 +1,8 @@
+# Archived Repository
+
+The sources of spectrumauctions.org can now be found at [sats-home-v2](https://github.com/spectrumauctions/sats-home-v2).
+
+
 # SatsHome
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
